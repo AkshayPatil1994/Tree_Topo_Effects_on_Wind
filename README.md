@@ -6,11 +6,11 @@ Repository for MSc Geomatics Thesis by R.Fu at Delft University of Technology
 
 ![This is an image](https://github.com/furunnan/Tree_Topo_Effects_on_Wind/blob/main/cover.png)
 
-Author
+Author\\
 FU, RUNNAN (TU Delft Architecture and the Built Environment; TU Delft Urbanism)
 
-Contributor
-Garcia Sanchez, C. (mentor) 
+Contributor\\
+Garcia Sanchez, C. (mentor) \\
 Pađen, I. (mentor)
 
 
