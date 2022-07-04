@@ -4,7 +4,7 @@ Repository for MSc Geomatics Thesis by R.Fu at Delft University of Technology
 
 ## Modeling tree topology effects on wind
 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![This is an image](https://github.com/furunnan/Tree_Topo_Effects_on_Wind/blob/main/cover.png)
 
 Author
 FU, RUNNAN (TU Delft Architecture and the Built Environment; TU Delft Urbanism)
