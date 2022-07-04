@@ -1,0 +1,17 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+Uref                 7.40;
+Zref                 4;
+zDir                 (0 0 1);
+flowDir              (0 1 0);
+z0-terrain           uniform 0.2;
+z0 	             uniform 0.0002;
+zGround              uniform 0;
+
+// ************************************************************************* //

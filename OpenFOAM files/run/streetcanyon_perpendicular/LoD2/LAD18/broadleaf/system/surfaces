@@ -1,0 +1,95 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Description
+    Writes out surface files with interpolated field data in VTK format, e.g.
+    cutting planes, iso-surfaces and patch boundary surfaces.
+
+    This file includes a selection of example surfaces, each of which the user
+    should configure and/or remove.
+
+\*---------------------------------------------------------------------------*/
+
+#includeEtc "caseDicts/postProcessing/visualization/surfaces.cfg"
+
+fields       (p U nut k epsilon);
+
+surfaces
+(
+    yNormal
+    {
+        $cuttingPlane;
+        pointAndNormalDict
+        {
+            basePoint    (0 18 0);
+            normalVector $y;      // Overrides default normalVector (1 0 0)
+        }                         // $y: macro for (0 1 0)
+    }
+
+    z18Normal
+    {
+        $cuttingPlane;
+        pointAndNormalDict
+        {
+            basePoint    (0 0 18); // Overrides default basePoint (0 0 0)
+            normalVector $z;      // $z: macro for (0 0 1)
+        }
+    }
+
+    z15Normal
+    {
+        $cuttingPlane;
+        pointAndNormalDict
+        {
+            basePoint    (0 0 15); // Overrides default basePoint (0 0 0)
+            normalVector $z;      // $z: macro for (0 0 1)
+        }
+    }
+
+
+    z12Normal
+    {
+        $cuttingPlane;
+        pointAndNormalDict
+        {
+            basePoint    (0 0 12); // Overrides default basePoint (0 0 0)
+            normalVector $z;      // $z: macro for (0 0 1)
+        }
+    }
+
+    z9Normal
+    {
+        $cuttingPlane;
+        pointAndNormalDict
+        {
+            basePoint    (0 0 9); // Overrides default basePoint (0 0 0)
+            normalVector $z;      // $z: macro for (0 0 1)
+        }
+    }
+
+    z6Normal
+    {
+        $cuttingPlane;
+        pointAndNormalDict
+        {
+            basePoint    (0 0 6); // Overrides default basePoint (0 0 0)
+            normalVector $z;      // $z: macro for (0 0 1)
+        }
+    }
+        
+    pedestrianH
+    {
+        $cuttingPlane;
+        pointAndNormalDict
+        {
+            basePoint    (0 0 1.75); // Overrides default basePoint (0 0 0)
+            normalVector $z;      // $z: macro for (0 0 1)
+        }
+    }
+);
+
+// ************************************************************************* //

@@ -1,0 +1,40 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultFieldValues
+(
+    volScalarFieldValue plantCd 0
+    volScalarFieldValue leafAreaDensity 0
+);
+
+regions
+(
+    cellToCell
+    {
+    	set porousCells_broadleaf;
+        fieldValues
+        (
+            volScalarFieldValue plantCd 0.2
+            volScalarFieldValue leafAreaDensity 1.6
+        );
+    }
+
+    cellToCell
+    {
+    	set porousCells_conifer;
+        fieldValues
+        (
+            volScalarFieldValue plantCd 0.2
+            volScalarFieldValue leafAreaDensity 1.4
+        );
+    }
+
+);
+
+

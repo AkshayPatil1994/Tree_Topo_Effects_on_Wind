@@ -1,0 +1,16 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+//friction velocity = 0.52; Cμ=0.09
+
+flowVelocity         (0 0 0);
+pressure             0;
+turbulentKE          0.9;
+turbulentEpsilon     0.0turbulentEpsilon4;
+
+// ************************************************************************* //

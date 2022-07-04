@@ -1,0 +1,56 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+actions
+(
+    {
+        name    porousCellSet;
+        type    cellSet;
+        action  new;
+        source  surfaceToCell;
+        sourceInfo
+        {
+            file        "constant/triSurface/tree1.obj";
+            outsidePoints ((28.111 248.11 4.05134));
+            includeCut      false;
+            includeInside   true;
+            includeOutside  false;
+            nearDistance    0.2;
+            curvature       1.0;
+
+        // Optional entries
+            useSurfaceOrientation false;
+            fileType        obj;
+            scale           1.0;
+        }
+    }
+    {
+        name    porousCells;
+        type     cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set porousCellSet;
+        }
+    } 
+            
+);
+
+// ************************************************************************* //
+

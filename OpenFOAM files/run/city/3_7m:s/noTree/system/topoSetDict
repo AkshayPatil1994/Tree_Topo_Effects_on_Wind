@@ -1,0 +1,88 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.0                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+actions
+(
+    {
+        name    porousCellSet_broadleaf;
+        type    cellSet;
+        action  new;
+        source  surfaceToCell;
+        sourceInfo
+        {
+            file        "constant/triSurface/LoD2_canopy_broadleaf.obj";
+            outsidePoints ((200.3313 890.2234 4.05134));
+            includeCut      false;
+            includeInside   true;
+            includeOutside  false;
+            nearDistance    0.2;
+            curvature       1.0;
+
+        // Optional entries
+            useSurfaceOrientation false;
+            fileType        obj;
+            scale           1.0;
+        }
+    }
+    {
+        name    porousCells_broadleaf;
+        type     cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set porousCellSet_broadleaf;
+        }
+    } 
+
+    {
+        name    porousCellSet_conifer;
+        type    cellSet;
+        action  new;
+        source  surfaceToCell;
+        sourceInfo
+        {
+            file        "constant/triSurface/LoD2_canopy_conifer.obj";
+            outsidePoints ((200.3313 890.2234 4.05134));
+            includeCut      false;
+            includeInside   true;
+            includeOutside  false;
+            nearDistance    0.2;
+            curvature       1.0;
+
+        // Optional entries
+            useSurfaceOrientation false;
+            fileType        obj;
+            scale           1.0;
+        }
+    }
+    {
+        name    porousCells_conifer;
+        type     cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set porousCellSet_conifer;
+        }
+    } 
+            
+);
+
+// ************************************************************************* //
+

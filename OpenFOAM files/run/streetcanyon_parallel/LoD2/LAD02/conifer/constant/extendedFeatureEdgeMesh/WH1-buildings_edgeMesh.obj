@@ -1,0 +1,51 @@
+# Wavefront OBJ file written 2022-04-25T22:14:36
+o WH1-buildings_edgeMesh
+
+# points : 16
+# lines  : 24
+
+# <points count="16">
+v 90 45 18
+v -90 45 18
+v -90 27 18
+v 90 27 18
+v 90 27 0
+v -90 27 0
+v -90 45 0
+v 90 45 0
+v 90 9 18
+v -90 9 18
+v -90 -9 18
+v 90 -9 18
+v 90 -9 0
+v -90 -9 0
+v -90 9 0
+v 90 9 0
+# </points>
+
+# <edges count="24">
+l 2 3
+l 1 2
+l 3 4
+l 4 1
+l 5 4
+l 3 6
+l 6 5
+l 7 6
+l 2 7
+l 8 5
+l 7 8
+l 8 1
+l 10 11
+l 9 10
+l 11 12
+l 12 9
+l 13 12
+l 11 14
+l 14 13
+l 15 14
+l 10 15
+l 16 13
+l 15 16
+l 16 9
+# </edges>

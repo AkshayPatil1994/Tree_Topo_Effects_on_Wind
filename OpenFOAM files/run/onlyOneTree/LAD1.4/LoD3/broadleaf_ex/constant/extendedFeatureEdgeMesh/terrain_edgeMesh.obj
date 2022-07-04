@@ -1,0 +1,19 @@
+# Wavefront OBJ file written 2022-02-14T14:56:05
+o terrain_edgeMesh
+
+# points : 4
+# lines  : 4
+
+# <points count="4">
+v -90 -31 4.05
+v 151 -31 4.05
+v 151 408 4.05
+v -90 408 4.05
+# </points>
+
+# <edges count="4">
+l 1 2
+l 2 3
+l 3 4
+l 4 1
+# </edges>
