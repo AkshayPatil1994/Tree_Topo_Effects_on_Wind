@@ -10,7 +10,7 @@ Repository for MSc Geomatics Thesis by R.Fu at Delft University of Technology
 - FU, RUNNAN (TU Delft Architecture and the Built Environment; TU Delft Urbanism)
 
 *Contributor*
-- Garcia Sanchez, C. (mentor)
+- García-Sánchez‬, C. (mentor)
 - Pađen, I. (mentor)
 
 
