@@ -47,7 +47,7 @@ graphFormat     raw;
 
 runTimeModifiable true;
 
-libs ("treekEpsilon.so" "treeFoam.so" "libatmosphericModels.so");
+libs ("treekEpsilon.so" "libatmosphericModels.so");
 
 functions
 {
