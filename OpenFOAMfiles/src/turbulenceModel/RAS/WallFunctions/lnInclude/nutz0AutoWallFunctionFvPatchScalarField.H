@@ -1,1 +1,0 @@
-../derivedFvPatchFields/wallFunctions/nutWallFunctions/nutz0AutoWallFunction/nutz0AutoWallFunctionFvPatchScalarField.H
