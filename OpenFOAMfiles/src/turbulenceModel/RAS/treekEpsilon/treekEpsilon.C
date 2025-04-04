@@ -227,7 +227,7 @@ treekEpsilon<BasicTurbulenceModel>::treekEpsilon
         IOobject
         (
             "plantCd",
-            "2",
+            this->runTime_.timeName(),
             this->mesh_,
             IOobject::MUST_READ,
             IOobject::AUTO_WRITE
@@ -239,7 +239,7 @@ treekEpsilon<BasicTurbulenceModel>::treekEpsilon
         IOobject
         (
             "leafAreaDensity",
-            "2",
+            this->runTime_.timeName(),
             this->mesh_,
             IOobject::MUST_READ,
             IOobject::AUTO_WRITE

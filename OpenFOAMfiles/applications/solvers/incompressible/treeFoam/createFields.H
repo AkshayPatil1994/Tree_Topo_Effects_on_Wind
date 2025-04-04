@@ -26,13 +26,13 @@ volVectorField U
     mesh
 );
 
-Info<< "Reading field leafAreaDensity from time 2\n" << endl;
+Info<< "Reading field leafAreaDensity \n" << endl;
 volScalarField leafAreaDensity
 (
     IOobject
     (
         "leafAreaDensity",
-        "2",
+	runTime.timeName(),
         mesh,
         IOobject::MUST_READ,
         IOobject::AUTO_WRITE
@@ -40,13 +40,13 @@ volScalarField leafAreaDensity
     mesh
 );
 
-Info<< "Reading field plantCd from time 2\n" << endl;
+Info<< "Reading field plantCd\n" << endl;
 volScalarField plantCd
 (
     IOobject
     (
         "plantCd",
-        "2",
+	runTime.timeName(),
         mesh,
         IOobject::MUST_READ,
         IOobject::AUTO_WRITE

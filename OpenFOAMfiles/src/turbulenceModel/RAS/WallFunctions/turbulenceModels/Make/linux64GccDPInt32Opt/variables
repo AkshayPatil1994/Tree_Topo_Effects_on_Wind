@@ -1,4 +1,0 @@
-wallFunctions = derivedFvPatchFields/wallFunctions
-nutWallFunctions = $(wallFunctions)/nutWallFunctions
-epsilonWallFunctions = $(wallFunctions)/epsilonWallFunctions
-LIB = $(FOAM_USER_LIBBIN)/libUserturbulenceModels
