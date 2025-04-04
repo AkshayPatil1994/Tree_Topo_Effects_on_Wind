@@ -5,6 +5,6 @@ nutWallFunctions = $(wallFunctions)/nutWallFunctions
 $(nutWallFunctions)/nutz0WallFunction/nutz0WallFunctionFvPatchScalarField.C
 epsilonWallFunctions = $(wallFunctions)/epsilonWallFunctions
 $(epsilonWallFunctions)/epsilonz0WallFunction/epsilonz0WallFunctionFvPatchScalarField.C
-../incompressible/turbulentTransportModels/derivedFvPatchFields/wallFunctions/alphatWallFunctions/alphatkz0WallFunction/alphatkz0WallFunctionFvPatchScalarField.C
+incompressible/turbulentTransportModels/derivedFvPatchFields/wallFunctions/alphatWallFunctions/alphatkz0WallFunction/alphatkz0WallFunctionFvPatchScalarField.C
   
 LIB = $(FOAM_USER_LIBBIN)/libUserturbulenceModels
